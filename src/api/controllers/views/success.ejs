@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Email verification Success</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+  </style>
+  <style>
+    * {
+      font-family: "Poppins";
+    }
+
+    body {
+      background-image: url(/images/background.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    img {
+      width: 10%;
+    }
+
+    .wrapper {
+      margin: auto;
+      padding: 2em;
+      height: 80%;
+    }
+
+    .logo-wrap {
+      text-align: center;
+      padding: 2em;
+    }
+
+    .container {
+      background-color: #fff;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 415px;
+      height: 532px;
+      border: 1px solid #1d1d2929;
+      border-radius: 30px;
+    }
+
+    .animation {
+      margin-top: 2em;
+      margin-bottom: 3em;
+    }
+
+    .text-wrap {
+      text-align: center;
+    }
+
+    .text-welcome {
+      text-align: center;
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 10px;
+      letter-spacing: 0.21px;
+      line-height: 28px;
+    }
+
+    .text-body {
+      margin: auto;
+      width: 80%;
+      line-height: 20px;
+      letter-spacing: 0.13px;
+      color: #1d1d2960;
+      font-size: 14px;
+      font-weight: medium;
+      margin-bottom: 5em;
+    }
+
+    .btn {
+      color: white;
+  width: 120px;
+  height: 49px;
+  font-size: 15px;
+  border-radius: 16px;
+  font-weight: 400;
+      border: none;
+      cursor: pointer;
+  background-color: #55A628;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+      img {
+        width: 50%;
+      }
+
+      .container {
+        width: 350px;
+        height: 550px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="logo-wrap">
+      <img 
+      src="https://kitchen-savvy.com/_next/image?url=%2Flogo.png&w=256&q=75"
+      width="100%"></img>
+    </div>
+    <div class="container">
+
+      <div class="contain">
+        <div class="animation">
+          <lottie-player src="/public/success.json" background="transparent" speed="1"
+            style="width: 260px; height: 188px; margin: auto" autoplay>
+          </lottie-player>
+        </div>
+        <div class="text-wrap">
+          <p class="text-welcome">Verified Successfully !</p>
+          <p class="text-body">
+            Your Email adress is verified successfully!
+          </p>
+
+          <div class="">
+            <a href="https://kitchen-savvy.com/auth/login" style="
+                            font-size: 20px;
+                            font-family: Helvetica, Arial, sans-serif;
+                            color: #ffffff;
+                            text-decoration: none;
+                            padding: 15px 25px;
+                            border-radius: 2px;
+                            background-color: #8bc34a;
+                            display: inline-block;
+                          " target="_blank">
+              Continue to app
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
