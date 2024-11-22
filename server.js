@@ -10,7 +10,6 @@ const corsOptions = {
   methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
 };
 const authRouter = require("./src/api/routes/authRouter");
-const adminRouter = require("./src/api/routes/adminRouter");
 const userRouter = require("./src/api/routes/userRouter");
 
 const app = express();
@@ -43,7 +42,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
-app.use("/api/admin", adminRouter);
 
 process.on("uncaughtException", function (err) {
   console.log(err);
