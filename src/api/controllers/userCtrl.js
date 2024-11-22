@@ -9,7 +9,7 @@ const ejs = require("ejs");
 const SGmail = require("@sendgrid/mail");
 const authToken = process.env.AUTH_TOKEN;
 const accountSid = process.env.ACCOUNT_SID;
-const client = require("twilio")(accountSid, authToken);
+// const client = require("twilio")(accountSid, authToken);
 SGmail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const userCtrl = {
